@@ -82,8 +82,8 @@ try {
   var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
-  image: await skbuffer(BOT_INFO.split(";")[2]),
-  caption: FancyRandom(menu)
+  image: BOT_INFO.split(";")[2],
+  caption: menu
 })
 }))
 Module({
