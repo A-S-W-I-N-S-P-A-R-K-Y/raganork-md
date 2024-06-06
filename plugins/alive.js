@@ -29,7 +29,7 @@ Module({
   fromMe: w,
   use: 'utility',
   desc: 'Is bot alive?'
-}, (async (message, match) => {
+}, (async (message, match,m) => {
   var myid = message.client.user.id.split(":")[0]
   const stars = ['✦','✯','✯','✰','◬','✵'];
   const star = stars[Math.floor(Math.random()*stars.length)];
@@ -81,10 +81,7 @@ try {
 } catch (error) {
   var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
 }
-return await message.client.sendMessage(message.jid,{
-  image: BOT_INFO.split(";")[2],
-  caption: menu
-})
+return await m.sendReply(menu)
 }))
 Module({
   pattern: 'alive',
