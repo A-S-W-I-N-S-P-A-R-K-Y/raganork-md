@@ -77,7 +77,7 @@ Module({
 
 ${cmdmenu}`
 try {
-  var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
+  var _img = await skbuffer(BOT_INFO.split(";")[2])
 } catch (error) {
   var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
 }
