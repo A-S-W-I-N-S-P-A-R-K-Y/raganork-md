@@ -72,11 +72,6 @@ Module({
 ┃${star}│ _*Available RAM*_ : ${used} of ${total}
 ┃${star}│ _*Version*_ : ${config.VERSION}
 ┃${star}│
-┃${star}│
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃${star}│   ${BOT_INFO.split(";")[0]}
-┃${star}│ 
 ┃${star}╰───────────────
 ╰═════════════════⊷
 
